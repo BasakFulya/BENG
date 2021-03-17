@@ -1,0 +1,149 @@
+﻿
+@{
+    ViewBag.Title = Model.Title;
+
+}  
+
+@*@ @section head
+    {
+
+<script src="~/Content/style/js/jQuery2.1.3.js"></script>
+
+    <script>
+        $(document).ready(function myfunction()
+        {
+
+
+        }
+            
+            
+            ) 
+
+    </script>
+
+    }
+    *@
+
+
+@model  blogging.Models.ARTICLE
+
+<div class="blog-posts classic-blog single">
+    <div class="post format-image">
+        <div class="meta">
+        <span class="date">@Model.UploadDate</span><span class="categories">
+            <a href="/Category/Index/@Model.CategoryID">@Model.CATEGORY.Name</a>,
+            <a href="#">Photography</a></span><span class="comments">
+            <a href="#Comment">@Model.COMMENTs.Count <i class="icon-chat-1"></i></a></span></div>
+        <h1 class="post-title">@Model.Title</h1>
+        <figure class="main">
+            <img src="@Model.PICTURE.LargeSize" alt="" />
+        </figure>
+        <div class="post-content">
+   <p> @Model.ArticleContent</p>
+
+   <div class="meta tags">
+       @if(Model.TAGs != null) { 
+        foreach (blogging.Models.TAG tAG in Model.TAGs)
+       {  
+           <a href="/TAG/Index/@tAG.TagName">tAG.Name </a>
+       }
+       }
+   </div>
+            <div class="click-share">
+
+                <ul>
+                    <li><a class="btn share-facebook" href="#">Like</a></li>
+                    <li><a class="btn share-twitter" href="#">Tweet</a></li>
+                    <li><a class="btn share-pinterest" href="#">Pin it</a></li>
+                </ul>
+            </div>
+            <!-- /.share-links -->
+
+        </div>
+    </div>
+    <!-- /.post -->
+
+</div>
+<!-- /.blog-posts -->
+
+<div class="about-author dark-wrapper">
+    <div class="author-image"> <img alt="" src="@Model.USER.PICTURE.SmallSize" /> </div>
+    <div class="author-details">
+        <h3>@Model.USER.Name @Model.USER.Surname About</h3>
+
+        <p>@Model.USER.Explanation</p>
+        <ul class="social">
+            <li><a href="#"><i class="icon-s-twitter"></i></a></li>
+            <li><a href="#"><i class="icon-s-facebook"></i></a></li>
+            <li><a href="#"><i class="icon-s-pinterest"></i></a></li>
+            <li><a href="#"><i class="icon-s-dribbble"></i></a></li>
+            <li><a href="#"><i class="icon-s-linkedin"></i></a></li>
+        </ul>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+<div class="divide100"></div>
+
+<a id="Comment" />
+
+
+
+<div id="comments">
+    <h3>@Model.COMMENTs.Count Comment</h3>
+    <ol id="singlecomments" class="commentlist">
+
+        @foreach (blogging.Models.COMMENT item in Model.COMMENTs)
+
+        {
+            <li>
+                <div class="comment-wrapper">
+                    <div class="user"><img alt="" src="~/Content/image/default user.jpg" class="avatar" /></div>
+                    <div class="message">
+                        <div class="arrow-box">
+                            <div class="info">
+                                <h2><a href="#">@item</a></h2>
+                                <div class="meta">
+                                    <span class="date">@item.UploadDate.Value.ToShortDateString()</span>
+                                    <span class="reply"><a class="reply-link" href="#">Reply</a></span>
+                                </div>
+                            </div>
+                            <p>
+                               @item.Comment1
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+
+        }
+        </ol>
+    </div>
+
+       
+<!-- /#comments -->
+<div class="divide100"></div>
+<div class="comment-form-wrapper">
+    <h3>Would you like to share your thoughts?</h3>
+    <p>Your email address will not be published. Required fields are marked *</p>
+    <form class="comment-form" name="form_name" action="/Article/WriteComment/@Model.ArticleID" method="post">
+        <div class="name-field">
+            <label><i class="icon-user"></i></label>
+            <input type="text" name="NameSurname" title="Name and Surname*" />
+        </div>
+        <div class="email-field">
+            <label><i class="icon-mail-alt"></i></label>
+            <input type="text" name="Emai" title="Email*" />
+        </div>
+        <div class="website-field">
+            <label><i class="icon-globe"></i></label>
+            <input type="text" name="first" title="Website" />
+        </div>
+        <div class="message-field">
+            <textarea name="Comment1" id="textarea" rows="5" cols="30" title="Enter your comment here..."></textarea>
+        </div>
+        <input type="submit" value="Submit" name="submit" class="btn btn-submit" />
+    </form>
+</div>
+<!-- /.comment-form-wrapper -->

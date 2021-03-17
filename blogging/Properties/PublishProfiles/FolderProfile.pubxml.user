@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\BFK\source\repos\blogging\Blogging\bin\Release\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/blogging.dll">
+      <publishTime>03/15/2021 14:12:42</publishTime>
+    </File>
+    <File Include="bin/blogging.pdb">
+      <publishTime>03/15/2021 14:12:42</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>06/07/2018 22:03:48</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>06/07/2018 22:03:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/25/2018 00:38:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 22:48:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/25/2018 00:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>05/25/2018 00:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>05/25/2018 00:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>05/25/2018 00:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>05/25/2018 00:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>05/25/2018 00:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/25/2018 00:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.AccessControl.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/25/2018 00:38:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>02/01/2018 23:20:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>02/01/2018 23:16:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>02/01/2018 23:16:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>02/01/2018 23:20:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>02/01/2018 23:20:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>02/01/2018 23:20:56</publishTime>
+    </File>
+    <File Include="Content/ArticlePicture/LargeSize/peter.jpg">
+      <publishTime>10/11/2020 22:28:52</publishTime>
+    </File>
+    <File Include="Content/ArticlePicture/MiddleSize/william.jpg">
+      <publishTime>10/11/2020 22:29:07</publishTime>
+    </File>
+    <File Include="Content/ArticlePicture/SmallSize/eng.png">
+      <publishTime>10/11/2020 22:29:25</publishTime>
+    </File>
+    <File Include="Content/AuthorPicture/heidi.jpg">
+      <publishTime>10/11/2020 21:55:25</publishTime>
+    </File>
+    <File Include="Content/blog-post.html">
+      <publishTime>10/09/2020 00:59:52</publishTime>
+    </File>
+    <File Include="Content/blog.html">
+      <publishTime>10/16/2020 22:40:46</publishTime>
+    </File>
+    <File Include="Content/image/default user.jpg">
+      <publishTime>10/10/2020 01:50:34</publishTime>
+    </File>
+    <File Include="Content/image/like.png">
+      <publishTime>11/01/2020 00:01:15</publishTime>
+    </File>
+    <File Include="Content/image/view.png">
+      <publishTime>11/01/2020 01:01:34</publishTime>
+    </File>
+    <File Include="Content/style.css">
+      <publishTime>10/16/2020 22:40:34</publishTime>
+    </File>
+    <File Include="Content/style/css/blank.html">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/css/bootstrap.min.css">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/css/color/red.css">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/css/fancybox_loading%402x.html">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/css/fancybox_loading.html">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/css/fancybox_overlay.html">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/css/fancybox_sprite%402x.html">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/css/fancybox_sprite.html">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/css/images/closedhand.html">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/css/images/openhand.html">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/css/plugins.css">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/css/slider-pro.css">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/fonts/glyphicons-halflings-regular-2.html">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/fonts/glyphicons-halflings-regular-3.html">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/fonts/glyphicons-halflings-regular-4.html">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/fonts/glyphicons-halflings-regular.html">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/fonts/glyphicons-halflings-regulard41d.html">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/a1.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/a2.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/a3.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/about.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/author.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/b1-full.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/b1.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/b2.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/b3.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/b4.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/b5.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/bs-1.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/bs-2.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/bs-3.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p1-full.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p1.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p10-full.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p10.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p11-full.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p11.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p12-full.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p12.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p14.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p15.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p16.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p2-full.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p2.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p3-full.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p3.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p4-full.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p4.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p5-full.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p5.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p6-full.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p6.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p7-full.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p7.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p8-full.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p8.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p9-full.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/p9.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/parallax1.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/parallax2.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/parallax3.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/pp1-1.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/pp1-2.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/pp2-1.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/pp2-2.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/pp2-3.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/pp4-1.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/pp4-1th.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/pp4-2.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/pp4-2th.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/pp4-3.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/pp4-3th.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/slider-bg1.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/slider-bg10.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/slider-bg11.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/slider-bg12.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/slider-bg2.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/slider-bg3.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/slider-bg4.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/slider-bg5.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/slider-bg6.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/slider-bg7.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/slider-bg8.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/slider-bg9.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/slider-th1.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/slider-th10.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/slider-th11.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/slider-th12.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/slider-th2.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/slider-th3.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/slider-th4.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/slider-th5.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/slider-th6.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/slider-th7.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/slider-th8.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/slider-th9.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/team1.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/team2.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/team3.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/u1.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/u2.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/u3.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/art/u4.jpg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/blank.gif">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/closedhand.cur">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/favicon.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-arrows.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-bag.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-basket.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-board.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-book.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-box.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-browser.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-calculator.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-calendar.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-camera.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-card.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-clock.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-cloud.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-coffee.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-comment.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-compas.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-count.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-disk.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-diskette.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-download.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-drop.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-film.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-flag.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-graph.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-heart.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-help.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-home.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-iu.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-letter.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-lock.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-mail.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-money.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-music.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-news.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-notes.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-officephone.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-openmail.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-phone.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-phone2.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-photo.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-portfolio.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-print.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-radio.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-ribbon.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-safe.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-search.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-shop.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-statistics.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-tablet.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-ticket.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-truck.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-tv.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-upload.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-user.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-view.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-voicemail.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-wallet.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-weather.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-web.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-worldmap%402x.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/icons/icon-worldmap.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/logo.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/images/openhand.cur">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/js/bootstrap.min.js">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/js/fancybox/blank.gif">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/js/fancybox/fancybox_loading%402x.html">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/js/fancybox/fancybox_loading.html">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/js/fancybox/fancybox_overlay.png">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/js/fancybox/fancybox_sprite%402x.html">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/js/fancybox/fancybox_sprite.html">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/js/fancybox/helpers/jquery.fancybox-thumbs0ff5.css">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/js/fancybox/jquery.fancybox.css">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/js/google-code-prettify/prettify.css">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/js/jquery.min.js">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/js/jQuery2.1.3.js">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/js/plugins.js">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/js/scripts.js">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/bebas.css">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/bebas/bebasneue_bold-webfont.eot">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/bebas/bebasneue_bold-webfont.svg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/bebas/bebasneue_bold-webfont.ttf">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/bebas/bebasneue_bold-webfont.woff">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/bebas/bebasneue_bold-webfont.woff2">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/bebas/bebasneue_bold-webfontd41d.eot">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/bebas/bebasneue_book-webfont.eot">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/bebas/bebasneue_book-webfont.svg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/bebas/bebasneue_book-webfont.ttf">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/bebas/bebasneue_book-webfont.woff">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/bebas/bebasneue_book-webfont.woff2">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/bebas/bebasneue_book-webfontd41d.eot">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/bebas/bebasneue_regular-webfont.eot">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/bebas/bebasneue_regular-webfont.svg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/bebas/bebasneue_regular-webfont.ttf">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/bebas/bebasneue_regular-webfont.woff">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/bebas/bebasneue_regular-webfont.woff2">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/bebas/bebasneue_regular-webfontd41d.eot">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/budicons.css">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/budicons/budicon.eot">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/budicons/budicon.svg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/budicons/budicon.ttf">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/budicons/budicon.woff">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/budicons/budicond41d.eot">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/fontello.css">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/fontello/fontello-circlee8cb.eot">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/fontello/fontello-circlee8cb.svg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/fontello/fontello-circlee8cb.ttf">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/fontello/fontello-circlee8cb.woff">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/fontello/fontello-social.eot">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/fontello/fontello-social.svg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/fontello/fontello-social.ttf">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/fontello/fontello-social.woff">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/fontello/fontello-sociald41d.eot">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/fontello/fontello.eot">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/fontello/fontello.svg">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/fontello/fontello.ttf">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/fontello/fontello.woff">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Content/style/type/fontello/fontellod41d.eot">
+      <publishTime>09/08/2020 19:51:10</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>09/08/2020 19:38:06</publishTime>
+    </File>
+    <File Include="Views/Admin/AuthorConfirms.cshtml">
+      <publishTime>11/01/2020 02:15:38</publishTime>
+    </File>
+    <File Include="Views/Article/AddArticle.cshtml">
+      <publishTime>11/06/2020 23:26:48</publishTime>
+    </File>
+    <File Include="Views/Article/Detail.cshtml">
+      <publishTime>11/10/2020 20:25:47</publishTime>
+    </File>
+    <File Include="Views/Author/BeAuthor.cshtml">
+      <publishTime>11/01/2020 02:15:21</publishTime>
+    </File>
+    <File Include="Views/Author/MyArticles.cshtml">
+      <publishTime>11/06/2020 23:22:10</publishTime>
+    </File>
+    <File Include="Views/Category/CategoryWidget.cshtml">
+      <publishTime>10/16/2020 22:40:39</publishTime>
+    </File>
+    <File Include="Views/Category/Index.cshtml">
+      <publishTime>10/16/2020 22:40:30</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>10/08/2020 01:08:22</publishTime>
+    </File>
+    <File Include="Views/Home/PopularArticlesWidget.cshtml">
+      <publishTime>11/07/2020 00:08:04</publishTime>
+    </File>
+    <File Include="Views/Shared/AboutUS.cshtml">
+      <publishTime>03/15/2021 00:51:39</publishTime>
+    </File>
+    <File Include="Views/Shared/ArticleListWidget.cshtml">
+      <publishTime>11/03/2020 23:36:55</publishTime>
+    </File>
+    <File Include="Views/Shared/Search.cshtml">
+      <publishTime>10/16/2020 22:40:42</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>03/15/2021 00:45:39</publishTime>
+    </File>
+    <File Include="Views/Tag/Index.cshtml">
+      <publishTime>10/16/2020 22:39:36</publishTime>
+    </File>
+    <File Include="Views/Tag/TagsWidget.cshtml">
+      <publishTime>10/11/2020 15:31:05</publishTime>
+    </File>
+    <File Include="Views/USER/LogIn.cshtml">
+      <publishTime>11/01/2020 01:03:00</publishTime>
+    </File>
+    <File Include="Views/USER/SignIn.cshtml">
+      <publishTime>11/01/2020 02:15:31</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>10/31/2020 23:31:26</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>09/08/2020 19:53:30</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/15/2021 14:12:43</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "AuthorConfirms";
+}
+
+
+@Model IEnumerable<blogging.Models.Users>
+
+<table>
+
+      @foreach (blogging.Models.USER item in Model)
+
+  {
+
+                              <tr>
+                                  <td>@item.Name @item.Surname</td>
+                                  <td><a href="/Admin/Confirm/@item.UserID">Confirm</a></td>
+                              </tr>
+
+                          }
+
+                      </table>

@@ -1,0 +1,28 @@
+﻿
+@model IEnumerable<blogging.Models.ARTICLE>
+@{ 
+
+}
+<div class="sidebox widget">
+    <h3 class="widget-title section-title">Popular Posts</h3>
+    <ul class="post-list">
+
+        @foreach (blogging.Models.ARTICLE article in Model)
+
+        {
+
+        <li>
+            <div class="icon-overlay"> 
+            <a href="/Article/Detail/@article.ArticleID">
+                <img src="@article.PICTURE.SmallSize" alt="" /> </a> </div>
+            <div class="meta">
+                <h5><a href="/Article/Detail/@article.ArticleID">@article.Title</a></h5>
+                <em>@article.UploadDate.ToShortDateString() <span class="comments"><a href="#">@article.COMMENTs.Count<i class="icon-chat-1"></i></a></span></em>
+            </div>
+        </li>
+
+        }
+
+    </ul>
+    <!-- /.post-list -->
+</div>

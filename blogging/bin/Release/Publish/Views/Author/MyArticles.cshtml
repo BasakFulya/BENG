@@ -1,0 +1,105 @@
+﻿
+@{
+    ViewBag.Title = "MyArticles";
+
+}
+
+<script src="~/Content/style/js/jquery.min.js"></script>
+
+<script>
+
+    $(document).ready(function myfunction() {
+        $("a.like").click(function myfunction() {
+            var id = $(this).data("id");
+            var link = "/Article/like/" + id;
+            $.ajax({
+                type: "GET",
+                url: link,
+                success: function (html) {
+                    $("a.like").html(result);
+                }
+            });
+        });
+    });
+
+</script>
+
+
+@model IEnumerable<blogging.Models.ARTICLE>
+@{
+    Layout = null;
+}
+@helper  MakeShortContent(string Text)
+{
+    if (Text.Length > 300)
+    {
+        @Text.Substring(0, 300)
+    }
+
+    else
+    {
+        @Text
+    }
+
+}
+
+<div class="blog-posts col-blog">
+    @foreach (blogging.Models.ARTICLE item in Model)
+    {
+        <div class="post row">
+            <div class="col-sm-4">
+                <figure>
+                    <a href="/Article/Detail/@item.ArticleID">
+                        <div class="text-overlay">
+                            <div class="info"><span>Read All</span></div>
+                        </div>
+                        <img src="@item.PICTURE.MiddleSize" alt="" />
+                    </a>
+                </figure>
+            </div>
+            <div class="col-sm-8 post-content">
+                <div class="meta">
+                    <span class="date">@item.UploadDate.ToShortDateString()</span><span class="comments">
+                        <a href="#">@item.COMMENTs.Count <i class="icon-chat-1"></i></a>
+                    </span>
+
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <span>
+                            <a href="#">
+                                @item.ViewedNumber
+                                <img src="~/Content/image/view.png" />
+
+                            </a>
+                        </span>
+
+                    }
+
+
+
+
+
+                    <span>
+
+                        <a class="like" href="javascript:void(0);" data-id="@item.ArticleID">
+                            @item.ArticleLike
+                            <img src="~/Content/image/like.png" />
+
+
+                        </a>
+                    </span>
+
+                </div>
+                <h2 class="post-title"><a href="/Article/Detail/@item.ArticleID">@item.Title</a></h2>
+
+                <p>@MakeShortContent(item.ArticleContent)</p>
+            </div>
+        </div>
+
+    }
+
+
+
+
+
+</div>

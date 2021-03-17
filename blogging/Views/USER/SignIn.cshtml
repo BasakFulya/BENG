@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "Sign In";
+
+}
+
+<form action="/USER/SignIn"  method="post">
+
+    <table>
+        <tr>
+
+            <td> Name : </td>
+
+            <td>
+                <input type="text" name="Name" value=" " />
+
+            </td>
+        </tr>
+
+        <tr>
+            <td> Surname : </td>
+            <td>
+                <input type="text" name="Surname" value=" " />
+            </td>
+        </tr>
+
+        <tr>
+            <td> UserName : </td>
+            <td> <input  type="text"  name="UserName" value=" " /> </td>
+        </tr>
+
+        <tr>
+            <td> Password : </td>
+            <td> <input type="password"  name="Password" value=" "/></td>
+        </tr>
+
+        <tr>
+            <td> EMail : </td>
+            <td> <input  type="text"   name="Email" value=" "/></td>
+        </tr>
+        <tr>
+            <td> Gender : </td>
+            <td>
+                <input type="radio" name="rdFemale" value="Female" />
+                <span>Female</span>
+            
+                <input type="radio" name="rdMale" value="Male" />
+                <span>Male</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td> Birthdate : </td>
+            <td> <input  type="date" name="Birthdate" value=" "/></td>
+        </tr>
+
+        <tr>
+            <td> </td>
+            <td> <input type="submit" name="name" value="SignIn"/></td>
+        </tr>
+
+    </table>
+
+
+</form>
+

@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Add Article";
+}
+
+<form action="/Article/AddArticle" method="post" enctype="multipart/form-data">
+
+    <table>
+        <tr>
+            <td>Title:</td>
+            <td>
+                <input type="text" name="Title" value="" />
+            </td>
+        </tr>
+        <tr>
+            <td>Content:</td>
+            <td>
+                <input type="text" name="ArticleContent" value="" />
+            </td>
+        </tr>
+        <tr>
+            <td>Category:</td>
+            <td>
+                <select name="CategoryID">
+                    @foreach (blogging.Models.CATEGORY category in ViewBag.Categories)
+                    {
+                        <option value="@category.CategoryID">@category.Name</option>
+                    }
+
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Picture:</td>
+            <td>
+                <input type="file" name="picture" value="" />
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" name="Name" value="Add Article" />
+            </td>
+        </tr>
+    </table>
+</form>
+

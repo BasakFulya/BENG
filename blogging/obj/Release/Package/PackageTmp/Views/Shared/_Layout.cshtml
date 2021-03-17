@@ -1,0 +1,261 @@
+﻿
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/Content/style/images/favicon.png">
+    <title>Blog - @ViewBag.Title</title>
+    <!-- Bootstrap core CSS -->
+    <link href="/Content/style/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Content/style/css/plugins.css" rel="stylesheet">
+    <link href="/Content/style.css" rel="stylesheet">
+    <link href="/Content/style/css/color/red.css" rel="stylesheet">
+    <link href="/Content/style/type/bebas.css" rel="stylesheet">
+    <link href="/Content/style/type/fontello.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+          <script src="style/js/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+          <![endif]-->
+    @RenderSection("head", false)
+</head>
+<body>
+    <div id="preloader"><div id="status"><div class="spinner"></div></div></div>
+    <div class="body-wrapper">
+        <div class="navbar default">
+            <div class="navbar-header">
+                <div class="container">
+                    <div class="basic-wrapper">
+                        <a class="btn responsive-menu pull-right" data-toggle="collapse" data-target=".navbar-collapse"><i></i></a>
+                        <div class="navbar-brand"><a href="index.html"><img src="style/images/logo.png" alt="" data-src="style/images/logo.png" data-ret="style/images/logo@2x.png" class="retina" /></a></div>
+                    </div>
+                    <nav class="collapse navbar-collapse pull-right">
+                        <ul class="nav navbar-nav">
+                            <li><a href="/Home/Index">Home</a></li>
+
+
+                            @if (User.IsInRole("Author"))
+
+                            {
+                                
+                                <li class="current dropdown">
+                                    <a href="/Writer/Index" class="dropdown-toggle js-activated">Author Panel</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="/Article/AddArticle">Add An Article</a></li>
+                                        <li><a href="/Writer/WriterFollowers">Followers</a></li>
+                                        <li><a href="/Writer/MyArticles">My Articles</a></li>
+                                    </ul>
+                                </li>
+                            }
+
+                            @if (User.IsInRole("Admin"))
+                            {
+
+                                <li class="dropdown">
+                                    
+                                    <a href="/Admin/Index" class="dropdown-toggle js-activated">Admin Panel</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="/Article/AddArticle">Add An Article</a></li>
+                                        <li><a href="/Category/AddCategory/">Add Category</a></li>
+                                        <li><a href="/Tag/AddTag">Add Tag</a></li>
+                                        <li><a href="/Admin/AddRole">Add Role</a></li>
+                                        <li><a href="/Admin/AddUser">Add User</a></li>
+                                        <li><a href="/Admin/AuthorConfirmation">Author Confirmation</a></li>
+                                    </ul>
+                                </li>
+
+                            }
+
+                                @if (User.IsInRole("Author") && !User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+                                {
+
+                                <li>
+                                    <a href="/Author/BeAuthor">Be Author</a>
+                                </li>
+
+
+                            }
+
+
+                                @if (!User.Identity.IsAuthenticated)
+                                {
+                                    <li>
+                                        <a href="/User/SignIn">Sign In</a>
+
+                                    </li>
+                                }
+
+
+
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <li><a href="/USER/Logout?redirectUrl=@this.Request.RawUrl">Log Out</a> </li>
+                                }
+
+                                else
+                                {
+                                    <li><a href="/User/LogIn">Log In</a> </li>
+                                }
+
+
+                                <li><a href="contact.html">Contact</a></li>
+                                <li class="dropdown social-dropdown pull-right">
+                                    <div class="share btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="icon-heart-1"></i></div>
+                                    <ul class="button-group dropdown-menu dropdown-menu-right share-links">
+                                        <li><a href="#" class="btn"><i class="icon-s-facebook"></i></a></li>
+                                        <li><a href="#" class="btn"><i class="icon-s-twitter"></i></a></li>
+                                        <li><a href="#" class="btn"><i class="icon-s-pinterest"></i></a></li>
+                                    </ul>
+                                </li>
+                                <!--/social-dropdown -->
+                            </ul>
+                            <!--/.navbar-nav -->
+                        </nav>
+                        <!--/.nav-collapse -->
+                    </div>
+                    <!--/.container -->
+                </div>
+                <!--/.navbar-header -->
+            </div>
+            <!--/.navbar -->
+            <div class="offset"></div>
+            <div class="dark-wrapper page-title">
+                <div class="container inner">
+                    <h1> Our Journal </h1>
+                </div>
+                <!--/.container -->
+            </div>
+            <!--/.page-title -->
+
+            <div class="container inner">
+                <div class="row">
+                    <div class="col-sm-8 content">
+                        @RenderBody()
+                    </div>
+                    <!-- /.content -->
+                    <aside class="col-sm-4 sidebar lp30">
+                        @{
+                            Html.RenderAction("PopularArticlesWidget", "Home");
+
+                        }
+
+
+
+
+                        <!-- /.widget -->
+                        @{
+                            Html.RenderPartial("AboutUS");
+                        }
+                        <!-- /.widget -->
+                        @{
+                            Html.RenderPartial("Search");
+                        }
+                        <!-- /.widget -->
+                        @{
+                            Html.RenderAction("CategoryWidget", "Category");
+                        }
+                        <!-- /.widget -->
+                        @{
+                            Html.RenderAction("TagsWidget", "Tag");
+                        }
+                        <!-- /.widget -->
+                    </aside>
+                    <!-- /.col-sm-4 .sidebar -->
+
+                </div>
+                <!-- /.row -->
+            </div>
+            <!--/.container -->
+            <footer class="footer black-wrapper">
+                <div class="container inner">
+                    <div class="row">
+
+                        <div class="col-sm-3">
+                            @{
+                                Html.RenderAction("PopularArticlesWidget", "Home");
+
+                            }
+                        </div>
+                        <!-- /column -->
+
+                        <div class="col-sm-3">
+                            @{
+                                Html.RenderPartial("AboutUS");
+                            }
+                            <!-- /.widget -->
+                        </div>
+                        <!-- /column -->
+
+                        <div class="col-sm-3">
+                            <div class="widget">
+                                <h3 class="widget-title">Get In Touch</h3>Contact us here : compengineers99@gmail.com </p>
+                                <div class="contact-info">
+                                    <i class="icon-location"></i>ISTANBUL/TURKEY <br />
+                                    <i class="icon-linkedin"></i>www.linkedin.com/in/basakfulya <br />
+                                    <i class="icon-linkedin"></i>www.linkedin.com/in/durmuş-bilgeç <br />                                   
+                                    <i class="icon-mail"></i>compengineers99@gmail.com<br/>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /column -->
+
+                        <div class="col-sm-3">
+                            @{
+                                Html.RenderAction("TagsWidget", "Tag");
+                            }
+                            <!-- /.widget -->
+
+                            @{
+                                Html.RenderAction("CategoryWidget", "Category");
+                            }
+                            <!-- /.widget -->
+
+                        </div>
+                        <!-- /column -->
+
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- .container -->
+
+                <div class="sub-footer">
+                    <div class="container">
+                        <p class="pull-left">© 2015 Keepsake. All rights reserved. Theme by <a href="http://elemisfreebies.com/">elemis</a>.</p>
+                        <ul class="footer-menu pull-right">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+            <!-- /footer -->
+        </div>
+        <!--/.body-wrapper -->
+        <script src="~/Content/style/js/jquery.min.js"></script>
+
+        <script src="~/Content/style/js/bootstrap.min.js"></script>
+
+        <script src="~/Content/style/js/plugins.js"></script>
+
+        <script src="~/Content/style/js/scripts.js"></script>
+    </body>
+
+</html>
